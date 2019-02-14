@@ -28,5 +28,5 @@
     // this ensures openpixel.js is loaded asynchronously
     three.parentNode.insertBefore(two, three)
 }(window, document, 'script', 'js_url', 'opix_func', 24*60*60*1000);
-opix_func("init","ID-XXXXXXXX");
+opix_func("init","PARTNER_NAME");
 opix_func("event","pageload");

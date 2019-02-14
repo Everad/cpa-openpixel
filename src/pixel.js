@@ -35,11 +35,12 @@ class Pixel {
       bn:           ()=>{return Browser.nameAndVersion()}, // browser name and version number
       md:           ()=>{return Browser.isMobile()}, // is a mobile device?
       ua:           ()=>{return Browser.userAgent()}, // user agent
-      utm_source:   (key)=>{return Cookie.getUtm(key)}, // get the utm source
-      utm_medium:   (key)=>{return Cookie.getUtm(key)}, // get the utm medium
-      utm_term:     (key)=>{return Cookie.getUtm(key)}, // get the utm term
-      utm_content:  (key)=>{return Cookie.getUtm(key)}, // get the utm concent
-      utm_campaign: (key)=>{return Cookie.getUtm(key)}, // get the utm campaign
+      sid1:         (key)=>{return Cookie.getUtm(key)}, // get the utm source
+      sid2:         (key)=>{return Cookie.getUtm(key)}, // get the utm medium
+      sid3:         (key)=>{return Cookie.getUtm(key)}, // get the utm term
+      sid4:         (key)=>{return Cookie.getUtm(key)}, // get the utm concent
+      sid5:         (key)=>{return Cookie.getUtm(key)}, // get the utm campaign
+      ev_campaign: (key)=>{return Cookie.getUtm(key)}, // get the utm campaign
     }
   }
 

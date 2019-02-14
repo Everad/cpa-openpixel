@@ -40,7 +40,7 @@ var Cookie = {
   // },
 
   setUtms() {
-    var utmArray = ['utm_source','utm_medium','utm_term','utm_content','utm_campaign'];
+    var utmArray = ['sid1','sid2','sid3','sid4','sid5', 'ev_campaign'];
     var exists = false;
     for (var i = 0, l = utmArray.length; i < l; i++) {
       if (isset(Url.getParameterByName(utmArray[i]))) {
