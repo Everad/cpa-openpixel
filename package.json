@@ -1,5 +1,5 @@
 {
-  "name": "openpixel",
+  "name": "cpa-openpixel",
   "version": "1.0.4",
   "description": "Open Pixel is a JavaScript library for creating embeddable and intelligent tracking pixels",
   "main": "openpixel.min.js",
