@@ -1,3 +1,4 @@
+require('dotenv').config();
 // ---------- Configurations for your custom build of open pixel ---------- //
 
 // This is the header comment that will be included at the top of the "dist/openpixel.js" file
@@ -27,7 +28,8 @@ var concat = require('gulp-concat');
 var iife   = require('gulp-iife');
 var inject = require('gulp-inject-string');
 var rename = require('gulp-rename');
-var uglify = require('gulp-uglify');
+// var uglify = require('gulp-uglify');
+var uglify = require('gulp-uglify-es').default;
 var babel  = require('gulp-babel');
 
 // ---- Compile openpixel.js and openpixel.min.js files ---- //
@@ -52,7 +54,7 @@ gulp.task('openpixel', function() {
   // This will output the non-minified version
   .pipe(gulp.dest(DESTINATION_FOLDER))
   // This will minify and rename to openpixel.min.js
-  .pipe(uglify())
+  // .pipe(uglify())
   .pipe(inject.prepend(HEADER_COMMENT))
   .pipe(rename({ extname: '.min.js' }))
   .pipe(gulp.dest(DESTINATION_FOLDER));

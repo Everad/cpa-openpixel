@@ -13,6 +13,7 @@
     "gulp-inject-string": "^1.1.1",
     "gulp-rename": "^1.4.0",
     "gulp-uglify": "^3.0.1",
+    "gulp-uglify-es": "^1.0.4",
     "natives": "^1.1.6"
   },
   "scripts": {
@@ -26,5 +27,8 @@
     "url": "git+https://github.com/dockwa/openpixel.git"
   },
   "author": "Stuart Yamartino",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "dotenv": "^8.0.0"
+  }
 }
