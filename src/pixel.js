@@ -40,7 +40,8 @@ class Pixel {
       sid3:         (key)=>{return Cookie.getUtm(key)}, // get the utm term
       sid4:         (key)=>{return Cookie.getUtm(key)}, // get the utm concent
       sid5:         (key)=>{return Cookie.getUtm(key)}, // get the utm campaign
-      ev_campaign: (key)=>{return Cookie.getUtm(key)}, // get the utm campaign
+      ev_campaign:  (key)=>{return Cookie.getUtm(key)}, // get the utm campaign
+      id_cam:       (key)=>{return Cookie.getUtm(key)}, // get the utm campaign
     }
   }
 
